@@ -1,0 +1,19 @@
+{
+  "name": "fast-coding-graphql",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "babel-node server.js"
+  },
+  "author": "Dhrubesh",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3",
+    "express-graphql": "^0.6.12",
+    "graphql": "^0.13.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0"
+  }
+}
