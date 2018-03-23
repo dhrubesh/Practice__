@@ -45,7 +45,12 @@ var coursesData = [
     }
 ] 
  
-
+var getCourse = (args) => {
+	var id = args.id;
+	return coursesData.filter(course => {
+		return course.id == id;
+	})[0];
+}
 
 //Root resolver
 var root = {
@@ -60,4 +65,4 @@ app.use('/graphql',express_graphql({
 	rootValue: root,
 	graphiql: true
 }))
-app.listen(4000,() => console.log('listening at port 4000'));
+app.listen(4000,() => console.log('new_sever is listening at port 4000'));
