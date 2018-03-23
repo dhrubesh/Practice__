@@ -55,11 +55,11 @@ var getCourse = (args) => {
 var getCourses = (args) => {
 	if(args.topic){
 		var topic = args.topic;
-		return courseData.filter(courses => course.topic === topic)
+		return coursesData.filter(course => course.topic === topic)
 	}else{
 		return courseDate
 	}
-} 
+}
 
 //Root resolver
 var root = {
