@@ -52,6 +52,15 @@ var getCourse = (args) => {
 	})[0];
 }
 
+var getCourses = (args) => {
+	if(args.topic){
+		var topic = args.topic;
+		return courseData.filter(courses => course.topic === topic)
+	}else{
+		return courseDate
+	}
+} 
+
 //Root resolver
 var root = {
 	course: getCourse,
