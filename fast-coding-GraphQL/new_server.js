@@ -49,7 +49,8 @@ var coursesData = [
 
 //Root resolver
 var root = {
-	message: () => 'Hello World'
+	course: getCourse,
+	courses: getCourses
 }
 
 //Express Server and GraphQL endpoint
