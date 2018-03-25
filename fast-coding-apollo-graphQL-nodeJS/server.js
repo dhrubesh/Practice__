@@ -8,6 +8,8 @@ app.use('/graphiql', graphiqlExpress({
   endpointURL: '/graphql'
 }));
 
-app.use('/graphql', bodyParser.json(), graphqlExpress({}));
+app.use('/graphql', bodyParser.json(), graphqlExpress({
+  schema: schema
+}));
 
 app.listen(4000, () => console.log("server running on port 4000"));
