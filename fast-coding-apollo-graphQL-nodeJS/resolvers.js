@@ -1,4 +1,4 @@
-coursesData = [
+var coursesData = [
     {
         id: 1,
         title: 'The Complete Node.js Developer Course',
@@ -28,10 +28,10 @@ coursesData = [
 const resolvers = {
 	Query: {
 		allCourses: () => {
-			return courseData;
+			return coursesData;
 		},
 		course: (root, {id}) => {
-			return courseData.filter(course => {
+			return coursesData.filter(course => {
 				return course.id == id;
 			})[0];
 		}

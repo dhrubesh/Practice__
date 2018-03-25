@@ -1,5 +1,5 @@
 import resolvers from './resolvers';
-import { makeExecutableSchema } from 'graph-tools';
+import { makeExecutableSchema } from 'graphql-tools';
 
 const typeDefs = [`
   type Course {
