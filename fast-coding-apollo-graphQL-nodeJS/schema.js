@@ -1,3 +1,6 @@
+import resolvers from './resolvers';
+import { makeExecutableSchema } from 'graph-tools';
+
 const typeDefs = [`
   type Course {
     id: Int
@@ -12,3 +15,10 @@ const typeDefs = [`
 	course(id:Int!): Course
   }
 `]
+
+const schema = makeExecutableSchema({
+	typeDefs,
+	resolvers
+});
+
+export default schema;
